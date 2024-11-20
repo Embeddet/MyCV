@@ -11,7 +11,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -23,11 +23,12 @@ nav {
 }
 
 nav a {
-    padding: 14px 20px;
+    padding: 12px;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
+    font-size: 1em;
 }
 
 nav a:hover {
@@ -43,6 +44,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    border-radius: 8px;
 }
 
 footer {
@@ -60,21 +62,19 @@ img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    border-radius: 2%;
 }
 
+/* Active slide will be visible */
 .top-row {
     flex: 2;
     display: flex;
     justify-content: space-between;
     overflow-y: auto;
-}
-
-
-/* Active slide will be visible */
-.top-row {
     display: block;
     animation: slide-in 1s ease-in-out forwards;
 }
+
 
 /* Keyframes for smooth transitions */
 @keyframes slide-in {
@@ -99,9 +99,12 @@ img {
 
 
 .container {
-    display: flex;
-    margin-block: 5px;
-}
+        display: flex;
+        flex-direction: column;
+        margin-block: 2px;
+    }
+    
+
 .container1 {
     display: flex;
     margin-block: 2px;
@@ -116,8 +119,7 @@ img {
 }
 
 .left-column {
-    width: 30%;
-    margin-right: 20px;
+    width: 20%;
 }
 
 .right-column {
@@ -128,13 +130,13 @@ img {
 .top-row, .bottom-row {
     padding-block: 2px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 /* Increase the height of the images in the top row */
 .top-row img {
-   
-    width: 340px;
+   width: 340px;
     height: 350px; /* Adjust the value to your desired height */
     object-fit: cover; /* This ensures the image fills the container */
 }
@@ -145,25 +147,16 @@ video, iframe {
     height: 350px;
             }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
 nav img {
     width: 4cap;
     height: 40px;
     border-radius: 100%;
-    
 }
-aside {
 
-    border-radius: 8px;
-}
-.social-links {
+section {
 justify-content: center;
-
-
 }
+
 .skillset {
     display: grid;
     grid-template-columns: 200px 200px;
@@ -174,9 +167,25 @@ justify-content: center;
     text-align: left;
  
 }
-.grid-items img {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 2px;
+}
+.grid-items {
     background-color: #ccc;
     padding: 5%;
-    text-align: center;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
+
+
+
+h1, h2, p {
+    font-size: 1.2em;
+}
+
