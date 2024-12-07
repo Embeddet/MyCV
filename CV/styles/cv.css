@@ -108,15 +108,19 @@ img {
 
 .container1 {
     display: flex;
-    margin-block: 2px;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;  
+    margin: 2px;
 }
+
 .container3 {
     display: flex;
     margin-block: 2px;
     justify-content: center;
     align-content: center;
+}
+
+.center-column{
+   
 }
 
 .left-column {
@@ -128,13 +132,24 @@ img {
     width: 70%;
 }
 
-/*.top-row, .bottom-row {
-    padding-block: 2px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}*/
+.panes{
+    width: 30%;
+    img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+}
 
+.panes1{
+    width: 30%;
+img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+}
 
 nav img {
     width: 4cap;
@@ -148,30 +163,35 @@ justify-content: center;
 
 .skillset{
     display: grid;
-    grid-template-columns: 200px 200px;
-    gap: 5px;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 10px;
+    grid-auto-flow: column;
+    margin-block: 20px;
+    
 }
+
 .grid2-items img {
     background-color: #ccc;
     border-radius: 5px;
-    display: flex;
+    display:flex;
     justify-content: center;
-    width: 190px;
+    width: 300px;
     height: 170px;
-    object-fit: cover;
-    
+    object-fit:fill;      
 }
+
 .skills {
     text-align: left;
- 
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
     gap: 5px;
 }
+
 .grid-items img {
     background-color: #ccc;
     border-radius: 5px;
@@ -180,12 +200,14 @@ justify-content: center;
     width: 335px;
     height: 350px;
     object-fit: cover;
+    iframe {
+        width: 100%;
+            height: 360px;  
+        object-fit: cover;
+            }
 }
 
-iframe {
-    width: 335px;
-    height: 350px;
-            }
+
 
 
 h1, h2, p {
