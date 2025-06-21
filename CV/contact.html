@@ -10,20 +10,24 @@
 </head>
 <body>
     <header>
-        <h1>Contact</h1>
+        <nav class="navbar">
+            <img src="images/profile-logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="work_experience.html">Work Experience</a></li>
+                <li><a href="skills_education.html">Skills & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="inner-hero">
+            <h1>Contact</h1>
+        </div>
     </header>
-    
-    <nav>
-        <a href="index.html">Profile</a>
-        <a href="work_experience.html">Work Experience</a>
-        <a href="skills_education.html">Skills & Education</a>
-        <a href="contact.html">Contact</a>
-    </nav>
     <div class="container3">
         <aside class="center-column">
             <div>
             <h2>Albright Abu Edet</h2>
-            <img src="images/uav.jpg" alt="Profile Image">
+            <img src="images/cont.jpg" alt="Profile Image">
         </div>
         
                 <div class="contact">
@@ -35,14 +39,39 @@
                             <a href="https://wa.me/2348030404312"><img src="images/whatsapp.png" alt="Chat on Whatsapp"></a>
                             <a href="https://x.com/IamAlbright?t=VhI4wEwYkN7M40x_IvgB-Q&s=09"><img src="images/X.png" alt="Twitter"></a>
                            </nav>
+            </div>
+            <hr class="form-divider">
+            <!-- Replace YOUR_FORM_ID with your actual Formspree ID -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
             <!--<a href="skills_education.html" class="cta-button">Explore my Skill Set</a>-->
             </div>
         
         </div>
         <footer>
-        <p>&copy; 2024 My Personal Profile CV</p>
+    <div class="footer-content">
+      <span>My Profile © 2025 - Albright A. Edet</span>
+      <a href="site-plan.html">Site Plan</a>
+      <a href="contact.html">Contact Me</a>
+      <div class="social">
+        <a href="https://linkedin.com/in/albright-edet-69133a146"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://wa.me/2348030404312"><img src="images/whatsapp.png" alt="Chat on Whatsapp"></a>
+    <a href="https://x.com/IamAlbright?t=VhI4wEwYkN7M40x_IvgB-Q&s=09"><img src="images/X.png" alt="Twitter"></a>
+      </div>
+    </div>
     </footer>
 </body>
 </html>
